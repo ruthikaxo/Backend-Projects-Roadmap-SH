@@ -38,7 +38,7 @@ It lets you create, update, delete, and track tasks across multiple trackers, wi
 Clone the repo:  
 ```bash
 git clone https://github.com/ruthikaxo/Backend-Projects-Roadmap-SH.git
-cd task-tracker
+cd Task-Tracker-CLI
 pip install -e .
 ```
 

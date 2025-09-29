@@ -8,16 +8,17 @@ This repository will serve as a hub for multiple small-to-medium scale projects 
 ## 📌 Project 1: Task Tracker CLI  
 
 ### 📖 Overview  
-The **Task Tracker CLI** is a lightweight command-line tool to help manage tasks across multiple “trackers.”  
+This **Task Tracker** is a lightweight command-line tool to help manage tasks across multiple “trackers.”  
 Each tracker is stored as a JSON file, and you can add, update, mark as done, or delete tasks — all directly from your terminal.  
-
-### 📦 Installation  
-Clone the repo and install in **editable mode**:  
-```bash
-git clone https://github.com/ruthikaxo/Backend-Projects-Roadmap-SH.git
-cd task-tracker
-pip install -e .
-```
 
 ### 📎 Roadmap TT Link
 Roadmap.sh - https://roadmap.sh/projects/task-tracker
+
+---
+
+## 📌 Project 2: GitHub Stalker CLI  
+### 📖 Overview  
+This **GitHub Stalker** is a tiny command-line tool that fetches a user’s **public GitHub activity** and prints a human-readable report.
+
+### 📎 Roadmap TT Link
+Roadmap.sh - https://roadmap.sh/projects/github-user-activity

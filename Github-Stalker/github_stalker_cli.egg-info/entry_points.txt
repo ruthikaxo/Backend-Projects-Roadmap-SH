@@ -1,0 +1,2 @@
+[console_scripts]
+github-stalker = github_stalker:main

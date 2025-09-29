@@ -1,0 +1,7 @@
+github_stalker.py
+setup.py
+github_stalker_cli.egg-info/PKG-INFO
+github_stalker_cli.egg-info/SOURCES.txt
+github_stalker_cli.egg-info/dependency_links.txt
+github_stalker_cli.egg-info/entry_points.txt
+github_stalker_cli.egg-info/top_level.txt
