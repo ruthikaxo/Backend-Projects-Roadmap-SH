@@ -14,8 +14,8 @@ Each tracker is stored as a JSON file, and you can add, update, mark as done, or
 ### 📦 Installation  
 Clone the repo and install in **editable mode**:  
 ```bash
-git clone https://github.com/yourusername/python-projects.git
-cd python-projects
+git clone https://github.com/ruthikaxo/Backend-Projects-Roadmap-SH.git
+cd task-tracker
 pip install -e .
 ```
 
