@@ -1,46 +1,10 @@
-#hello world
-
-
-#Requirements
-# The application should run from the command line, accept user actions and inputs as arguments, and store the tasks in a JSON file. The user should be able to:
-# Add, Update, and Delete tasks
-# Mark a task as in progress or done
-# List all tasks
-# List all tasks that are done
-# List all tasks that are not done
-# List all tasks that are in progress
-
-#find the tracker, and then update it if present, otherwise, create new one
-
-# the json module helps us perform activities on files
 import json
-# path helps us find the path of a file
 from pathlib import Path
-# for cli arguments
 import argparse
-#for datetime
-from datetime import datetime, date, timedelta
-#for pretty tables
+from datetime import datetime
 from tabulate import tabulate
 
-#json.dump() helps you write python data into an external json file
-
-# with.... open 
-# -w for write
-# -a for append
-# -r for read
-
-# Tracker format
-# Tasks = {id1 = {desc: 'xx', status: 'yy', createdAt: datetime, updatedAt: datetime}}
-
-# list tasks
-
 def list_tks(tracker_name, task_status=None):
-    # ask what tracker they want
-    # check if tracker exists
-    # if doesn't exist, return error message
-    # otherwise, list contents
-
     print("I see you want to see what's left right in your", tracker_name, "tracker, right? \n")
     task_cabinet = Path("Task-Cabinet")
     task_cabinet.mkdir(parents=True, exist_ok=True) #if directory exists
@@ -90,8 +54,6 @@ def list_tks(tracker_name, task_status=None):
         print("No tasks are", task_status,"yet sweets.")       
 
 def add_tks(tracker_name, task_name):
-    # add a task to a tracker
-    # if tracker doesn't exist, create it and add the new task, priority being the order it's currently at
     tracker_dir = Path("Task-Cabinet/") 
     
     tracker = tracker_dir

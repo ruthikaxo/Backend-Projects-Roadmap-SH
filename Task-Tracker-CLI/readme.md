@@ -39,11 +39,12 @@ Clone the repo:
 ```bash
 git clone https://github.com/ruthikaxo/Backend-Projects-Roadmap-SH.git
 cd task-tracker
+pip install -e .
 ```
 
 Run the app with Python:  
 ```bash
-python task-tracker.py <command> [arguments]
+task-cli <command> [arguments]
 ```
 
 ---
@@ -53,38 +54,38 @@ python task-tracker.py <command> [arguments]
 
 ### 📖 Get Help 
 ```-h
-python task-tracker.py -h
+task-cli -h
 ```
 
 ### ▶️ Add a Task  
 ```bash
-python task-tracker.py add <tracker_name> "<task_name>"
+task-cli add <tracker_name> "<task_name>"
 ```
 
 ### 📋 List Tasks  
 ```bash
-python task-tracker.py list <tracker_name> [status]
+task-cli list <tracker_name> [status]
 ```
 - `status` can be `todo`, `in-progress`, or `done`.  
 
 ### ✏️ Update a Task  
 ```bash
-python task-tracker.py update <tracker_name> <task_id> "<new_task_name>"
+task-cli update <tracker_name> <task_id> "<new_task_name>"
 ```
 
 ### ✅ Mark as Done  
 ```bash
-python task-tracker.py mark-done <tracker_name> <task_id>
+task-cli mark-done <tracker_name> <task_id>
 ```
 
 ### ⏳ Mark as In-Progress  
 ```bash
-python task-tracker.py mark-in-progress <tracker_name> <task_id>
+task-cli mark-in-progress <tracker_name> <task_id>
 ```
 
 ### ❌ Delete a Task  
 ```bash
-python task-tracker.py delete <tracker_name> <task_id>
+task-cli delete <tracker_name> <task_id>
 ```
 
 ---
@@ -117,9 +118,9 @@ Tasks are stored as JSON inside `Task-Cabinet/<tracker_name>.json`:
 Here’s an example of how it looks in action:  
 
 ```bash
-$ python task-tracker.py add School-Tracker "Finish math homework"
-$ python task-tracker.py add School-Tracker "Clean room"
-$ python task-tracker.py list School-Tracker
+$ task-cli add School-Tracker "Finish math homework"
+$ task-cli add School-Tracker "Clean room"
+$ task-cli list School-Tracker
 
 ╒════╤═══════════════════╤═══════════════╤════════════════════╤════════════════════╕
 │ ID │ Task Title        │ Progress      │ Created At         │ Updated At         │
